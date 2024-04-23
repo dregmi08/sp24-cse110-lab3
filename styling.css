@@ -28,7 +28,8 @@ summary {
     font-family: juneBugFont, "Verdana", "Georgia", sans-serif;
     text-align: center;
     text-shadow : 2px 2px 5px rgb(192, 57, 255);
-    display:none;
+    display:flex;
+    justify-content: center;
 }
 
 html {
