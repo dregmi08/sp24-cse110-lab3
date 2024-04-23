@@ -9,16 +9,21 @@
   <body>
     <main>
     <header>
-     <h1> Official meeting notes for Team 5</h1>
-     <h2> Date: Wednesday, April 10, 2024  9:12 PM</h2>
-    </header>
-     <details>
-        <summary>Meeting Summary</summary>
-          <p>During this meeting, we discussed dividing roles among
-          each team member, resolved some unfinished business regarding the skit, 
-          and we all submitted the form at the bottom.</p>      
-     </details>
+      <div class = "title-header-summary"> 
+        <div>
+        <h1> Official meeting notes for Team 5</h1>
+        <h2> Date: Wednesday, April 10, 2024  9:12 PM</h2>
+        </header>
+        <details>
+            <summary>Meeting Summary</summary>
+              <p>During this meeting, we discussed dividing roles among
+              each team member, resolved some unfinished business regarding the skit, 
+              and we all submitted the form at the bottom.</p>      
+        </details>
+        </div>
+    </div>
     <section>
+    
      <div class="attendance"> 
         <h3> Meeting Attendance </h3>
         <ol>
@@ -37,6 +42,7 @@
     </div>
   </section>
     <hr>
+    <div class = "business">
     <section>
       <div class = "agenda"> 
           <h3>Agenda</h3>
@@ -70,7 +76,10 @@
               <li> Signing team contract/team rules</li>
           </ul>
       </div>
+    
     </section>
+  </div>
+ 
     <hr> 
   <section>
     <div class = "questions-comments">
@@ -93,8 +102,11 @@
       <h3> Presented Items </h3>
         <p>The link to the team logo can be found</p> <nav><a href = "./assets/PandaLogo.jpg">here</a></nav>
         <p>Here is the image rendered on the screen:</p>
+        <div class = "pic">
         <img src = "./assets/PandaLogo.jpg" id = "logo" alt = "An image of a panda typing on a laptop. The color scheme of the image is light blue and light purple">
+      </div>
         <p> Here is a 30 second mockup of one of the ideas we had for the skit:</p>
+        
         <video
            controls>
           <source src="./assets/PandaCoding%20ExpressVid_Angel.mp4"
@@ -107,14 +119,20 @@
     </div>
     <hr>
     <div class = "submission-component">
-      <h3>Team Member Agreement Form</h3>
+      <div class = "questions">
+      <div class = "title">
+        <h3>Team Member Agreement Form</h3>
+      </div>
       <form>
-        <label for="first-name">First Name:</label>  
-        <input type = "text" id = "first-name">
-        <br><br>
-        <label for="last-name">Last Name:</label>  
-        <input type = "text" id = "last-name">
-        <br><br>
+        <div class = "grid1">
+          <label for="first-name">First Name:</label>  
+          <input type = "text" id = "first-name">
+        </div>
+        <div class = "grid2">
+          <label for="last-name">Last Name:</label>  
+          <input type = "text" id = "last-name">
+        </div>
+      </div>
         <label for="current-date">Date:</label>  
         <input type = "date" id = "current-date">
         <br><br>
