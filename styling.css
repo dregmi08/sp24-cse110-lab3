@@ -61,15 +61,15 @@ body {
 
 
 .attendance {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .agenda{
     width: 300px;
     border: 1px solid white;
-    padding: 20px 20px 20px 20px;
+    padding: 30px 30px 30px 30px;
     border-radius: 10%;
 }
 
@@ -80,18 +80,18 @@ body {
     max-width: 300px;
     border: 1px solid white;
     padding-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 10%;
 }
 
 .new-business {
     width: 300px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 30px;
-    padding-right: 20px;
+    padding-right: 30px;
     border: 1px solid white;
     border-radius: 10%;
 }
@@ -110,12 +110,12 @@ h3 {
 }
 
 button:hover {
-    background-color: rgb(223, 116, 248);
+    background-color: rgb(220, 110, 240);
     border: 2px;
     border-radius: 97%;
     border-color: white;
     color: white;
-    padding: 15px 30px;
+    padding: 30px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -125,7 +125,7 @@ button:hover {
 }
 
 button:active {
-    color:color(from blueviolet srgb r g b / 0.5);
+    color:color(from blueviolet srgb r g b / 0.6);
 }
 
 ol {
