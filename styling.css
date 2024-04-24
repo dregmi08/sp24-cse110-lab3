@@ -1,20 +1,27 @@
+/* This is the font for the title*/
 @font-face {
     font-family: juneBugFont;
     src: url(./assets/junebug/JUNEBUG.TTF);
 }
 
+/*This is the font for the subtitles (mostly h2 tags)*/
 @font-face {
     font-family: frostedCake;
     src: url(./assets/KRFrostedCake.TTF);
 }
 
+/*This is the font for the body*/
 @font-face {
     font-family: bodyFont;
     src: url(./assets/MerfolkTypeface.ttf);
 }
+
+/*Set the font size to 1em*/
 * {
     font-size: 1em;
 }
+
+/*This sets the properties of the beginning three or so lines*/
 .title-header-summary {
     text-shadow : 2px 2px 5px rgb(192, 57, 255);
     text-decoration: underline wavy white;
@@ -26,6 +33,7 @@
 
 }
 
+/*This adss attributes to the summary tag*/
 summary {
     font-family: juneBugFont, "Verdana", "Georgia", sans-serif;
     text-align: center;
@@ -33,11 +41,13 @@ summary {
     display:none;
 }
 
+/*This is just in case the other custom fonts don't render*/
 html {
-    background: hsl(274, 76%, 89%);
     font-family: "Verdana", sans-serif;
 }
 
+/*Set the properties of the video, any set
+the position to be sticky along with the widths and height/margins*/
 video {
     width: 30%;
     height: 30%;
@@ -45,11 +55,14 @@ video {
     top: 20px;
 }
 
+/*Add a new elemnet of margin with pt along
+with setting the font of the body*/
 body {
     margin-left: 20pt;
     font-family: bodyFont;
 }
 
+/*Sets the properties of the picture*/
 #logo {
     border-width : 1mm;
     border-style: solid;
@@ -60,12 +73,15 @@ body {
     width: 30vw;
 }
 
-
+/*The following three elements are grouped together
+with flexbox, these classes set some of the properties
+of the box model*/
 .attendance {
     margin-top: 30px;
     text-align: center;
     margin-bottom: 30px;
 }
+
 
 .agenda{
     width: 300px;
@@ -97,6 +113,7 @@ body {
     border-radius: 10%;
 }
 
+/*Use flex box to arrange the elements*/
 .business {
     display: flex;
     justify-content: space-between;
@@ -105,11 +122,15 @@ body {
     flex-grow: 1;
 }
 
+/*Set any h3 tag to have the frosted cake font*/
 h3 {
     font-family: frostedCake;
     color: color-mix(srgb, #8970f5 25%, purple);
 }
 
+/*Set some of the attributes of the button, when
+you hover over it you should be able to see it 
+change size and color*/
 button:hover {
     background-color: rgb(220, 110, 240);
     border: 2px;
@@ -125,16 +146,19 @@ button:hover {
     cursor: pointer;
 }
 
+/*When you press your mouse on the button
+you should see the color of text of the button change*/
 button:active {
     color:color(blueviolet srgb r g b / 0.6);
 }
 
+/*Center the ordered list at the top*/
 ol {
     margin: auto;
     display: inline-block;
 }
 
-
+/*Set three elements on a grid*/
 .questions {
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -162,10 +186,12 @@ ol {
     background-color: plum;
   }
   
+  /*Make all of the text on the page bold*/
   h1, h2, h3{
     font-weight: bold;
   }
 
+  /*Set all of the specific selectors*/
   div > p {
     background-color: rgb(244, 198, 244);
   }
@@ -174,28 +200,36 @@ ol {
     color: rgb(102, 0, 117);
   }
 
+  /*Make the edges of the video rounded*/
   div ~ video {
     border-radius: 10%;
   }
 
+  /*Set the color of things in a div wrapped in em*/
 div em {
     color :rgb(102, 0, 117);
 }
 
+/*Set the decoration of the p with class p-color*/
 p.p-color {
    text-decoration: line-through;
 }
 
+/*add more margin*/
 body:has(img, audio) {
     margin-left: 70px;
 }
 
+/*Nested selector adds shadowing to all elements
+of unordered list*/
 ul {  
   li {
         text-shadow : 2px 2px 5px rgb(192, 57, 255);
     }
 }
 
+/*Have font be something else when the width of the screen is
+600 px or less*/
  @media (max-width: 600px) {
     html{
         font-family: "Verdana", "Georgia", sans-serif;
