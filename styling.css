@@ -9,6 +9,12 @@
     font-weight: bold;
     src: url(./assets/KRFrostedCake.TTF);
 }
+
+@font-face {
+    font-family: bodyFont;
+    font-weight: bold;
+    src: url(./assets/MerfolkTypeface.ttf);
+}
 * {
     color: #a54bff;
     font-size: 1em;
@@ -46,6 +52,7 @@ video {
 
 body {
     margin-left: 20pt;
+    font-family: bodyFont;
 }
 
 #logo {
