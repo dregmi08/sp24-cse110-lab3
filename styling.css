@@ -107,7 +107,7 @@ body {
 
 h3 {
     font-family: frostedCake;
-    color: color-mix(in srgb, #8970f5 25%, purple);
+    color: color-mix(srgb, #8970f5 25%, purple);
 }
 
 button:hover {
@@ -126,7 +126,7 @@ button:hover {
 }
 
 button:active {
-    color:color(from blueviolet srgb r g b / 0.6);
+    color:color(blueviolet srgb r g b / 0.6);
 }
 
 ol {
@@ -190,11 +190,11 @@ body:has(img, audio) {
     margin-left: 70px;
 }
 
-ul {
-  li{
+ul {  
+  li {
         text-shadow : 2px 2px 5px rgb(192, 57, 255);
     }
-  }
+}
 
  @media (max-width: 600px) {
     html{
