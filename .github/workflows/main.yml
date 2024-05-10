@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests and generate coverage
+        run: npm test
+
+      - name: Install Code Climate Test Reporter
+        run: npm install --save-dev codeclimate-test-reporter
+
+      - name: Upload coverage report to Code Climate
+        run: npm run upload-coverage
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
